@@ -1,0 +1,24 @@
+import java.io.Serializable;
+
+class Auto implements Serializable{
+	
+	private String nombreAuto;
+	private String marca;
+	private int año;
+
+	public Auto(String nombreAuto, String marca, int año) {
+		super();
+		this.nombreAuto = nombreAuto;
+		this.marca = marca;
+		this.año = año;
+	}
+
+	public int getAño() {
+		return año;
+	}
+
+	@Override
+	public String toString() {
+		return "Auto [nombreAuto=" + nombreAuto + ", marca=" + marca + ", año=" + año + "]";
+	}
+}
